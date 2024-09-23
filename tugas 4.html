@@ -1,0 +1,71 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>input nilai</title>
+    <style>
+    form.customForm {
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+        margin: 0 auto;
+        border-radius: 15px;
+        background-color: #f4f4f9;
+        width: 450px;
+        text-align: left;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+        font-family: 'Arial', sans-serif;
+    }
+
+    form.customForm label {
+        margin-bottom: 8px;
+        font-weight: bold;
+        color: #333;
+    }
+
+    form.customForm input {
+        margin-bottom: 20px;
+        padding: 10px;
+        border: 1px solid #bbb;
+        border-radius: 10px;
+        font-size: 14px;
+    }
+
+    input[type="submit"].customSubmit {
+        background-color: #b30a8e;
+        color: white; 
+        padding: 12px 25px; 
+        border: none; 
+        border-radius: 10px; 
+        cursor: pointer; 
+        font-size: 18px; 
+        transition: background-color 0.4s ease, transform 0.2s ease;
+    }
+
+    input[type="submit"].customSubmit:hover {
+        background-color: #2730ae; 
+        transform: scale(1.05);
+    }
+    </style>
+</head>
+<body>
+    <form class="customForm">
+        <label for="NIM">NIM:</label>
+        <input type="text" id="NIM" inputmode="numeric">
+        <br>
+        <label for="name">nama:</label>
+        <input type="text" id="nama" name="Nama">
+        <br>
+        <label for="tugas">Tugas:</label>
+        <input type="text" id="tugas" name="Tugas" inputmode="numeric">
+        <br>
+        <label for="uts">UTS:</label>
+        <input type="text" id="UTS"  name="UTS" inputmode="numeric">
+        <br>
+        <label for="uas">UAS:</label>
+        <input type="text" id="UAS" name="UAS" inputmode="numeric">
+        <br>
+        <input type="submit" value="Submit" class="customSubmit">
+      </form> 
+</body>
+</html>
